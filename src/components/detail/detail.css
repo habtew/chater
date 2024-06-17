@@ -1,3 +1,77 @@
 .detail {
     flex: 1;
+
+    .user{
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border: 1px solid #dddddd35;
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .info {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+
+        .option{
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    padding: 10px;
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                    background-color: rgba(17, 25, 40, 0.3);
+                    border-radius: 50%;
+                }
+
+            }
+
+            .photos {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+
+                .photoItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .photoDetail {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            object-fit: cover;
+
+                        }
+                        span {
+                            font-size: 14px;
+                            font-weight: 300;
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
